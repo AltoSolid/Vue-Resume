@@ -1,0 +1,251 @@
+body {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Oswald", sans-serif;
+}
+
+h1 {
+    padding-top: 20px;
+    text-align: center;
+    font-size: 34px;
+    margin: 0;
+}
+
+h2,
+.email-title {
+    text-align: left;
+    font-size: 20px;
+    font-weight: bold;
+    margin: 4px;
+    padding: 4px;
+}
+
+.email-title {
+    padding: 10px;
+}
+
+.container {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    vertical-align: middle;
+}
+
+.left-container {
+    background: #9ad3bc;
+    width: 25%;
+    position: relative;
+}
+
+.left-container__image-container {
+    width: 50%;
+    height: 200px;
+    position: relative;
+}
+
+.left-container__image {
+    border-radius: 30%;
+    position: relative;
+    width: 100%;
+    top: 5%;
+    left: 50%;
+}
+
+.left-container__subtitle {
+    text-align: center;
+}
+
+#about-me,
+#contact,
+#skills {
+    padding: 2px;
+}
+
+#about-me {
+    margin-top: 30%;
+}
+
+.about-me__description {
+    text-align: center;
+    padding: 10px;
+    margin: 0;
+}
+
+.contact__links {
+    list-style: circle;
+}
+
+.contact__link a {
+    text-decoration: none;
+    color: rgba(0, 0, 0, 8);
+}
+
+.contact__link a:hover,
+.contact__link a:active {
+    color: rgba(0, 0, 0, 0.3);
+}
+
+.right-container {
+    background: #f3eac2;
+    width: 75%;
+}
+
+.right-container__subtitle {
+    text-align: center;
+}
+
+.right-container__subtitle-description {
+    text-align: center;
+    font-size: 25px;
+    margin: 0;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.right-container__subtitle-logo {
+    width: 20%;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.right-container__section {
+    margin: 30px;
+}
+
+.right-container__list-circle {
+    list-style: circle;
+}
+
+.right-container__list {
+    list-style: square;
+}
+
+.form {
+    padding-top: 30px;
+    display: flex;
+}
+
+.form__btn {
+    background: #9ad3bc;
+    border-radius: 20px;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3);
+    padding: 10px;
+    height: 50%;
+}
+
+.form__btn:hover,
+.form__btn:active {
+    background: #f5b461;
+    color: #f3eac2;
+}
+
+.form__input {
+    margin: 2px 10px;
+    margin-top: 0;
+    border: none;
+    border-radius: 10px;
+    background: #9ad3bc;
+    padding: 20px;
+    padding-left: 10px;
+    font-size: 14px;
+}
+
+.custom-field {
+    position: relative;
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+.custom-field .placeholder {
+    position: absolute;
+    top: 30%;
+    left: 10%;
+    transform: translateY(-50%);
+    transition: top 0.3s ease, color 0.3s ease, font-size 0.3s ease;
+}
+
+.custom-field input:valid+.placeholder,
+.custom-field input:focus+.placeholder {
+    top: 10px;
+    font-size: 11px;
+    color: rgba(0, 0, 0, 0.6);
+}
+
+#custom-field input:valid+.placeholder,
+#custom-field input:focus+.placeholder {
+    top: 10px;
+    font-size: 11px;
+    color: rgba(0, 0, 0, 0.6);
+}
+
+#custom-field__input::placeholder {
+    color: rgba(0, 0, 0, 0.8);
+}
+
+.form__input:focus-visible {
+    outline: none;
+}
+
+.main-footer {
+    background: #f5b461;
+    padding: 2px;
+    margin: 0;
+}
+
+.main-footer__links {
+    list-style: none;
+    text-align: center;
+}
+
+.main-footer__link {
+    display: inline-block;
+    margin: 0 2%;
+}
+
+.main-footer__link a {
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.8);
+}
+
+.main-footer__link a:hover,
+.main-footer__link a:active {
+    color: rgba(0, 0, 0, 0.6);
+}
+
+#container {
+    position: relative;
+    left: 60px;
+    height: 80px;
+    width: 80px;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+#container img {
+    height: 80px;
+    width: 80px;
+    position: relative;
+}
+
+#ball {
+    height: 68%;
+    width: 10px;
+    background: #12B981;
+    border: none;
+    position: absolute;
+    top: 18%;
+    right: 0%;
+    animation-name: move;
+    animation-duration: 3s;
+    animation-delay: 9s;
+    animation-iteration-count: 3;
+    animation-timing-function: ease-out;
+    z-index: 3;
+}
+
+@keyframes move {
+    50% {
+        right: 80%;
+    }
+}

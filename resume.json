@@ -1,0 +1,78 @@
+{
+    "title": "Awesome resume",
+    "about_me": {
+        "image": "img/profile-image.JPG",
+        "name": "Santiago Hincapié Murillo",
+        "title": "About me",
+        "descriptionFirst": "I am passionate about computer technology, languages, culture and reading. I love meeting people from all kinds of cultures, creating and sharing with them all kinds of memories that will be treasured for life. Also, I am excited to see and practice martial arts.",
+        "descriptionSecond": "I have knowledge of offensive computer security, ethical hacking and pentesting. I am also passionate about both web development and development for mobile devices. Whenever I start a new project in the short, medium or long term, I encourage myself to do a lot of research on it."
+    },
+    "contact": {
+        "title": "Contact",
+        "email": "shincapie@playvox.com",
+        "githubLink": "http://github.com/altosolid",
+        "github": "Github",
+        "number": "Contact Number: +57 123456789"
+    },
+    "skills": {
+        "title": "Skills",
+        "skills": {
+            "thinking": "Critical thinking",
+            "positivism": "Positivism",
+            "programming": "Programming"
+        }
+    },
+    "rightContainer": {
+        "name": "Santiago Hincapié Murillo",
+        "subtitle": "Front-End Developer Intern at",
+        "image": "img/playvox.png",
+        "experience": {
+            "title": "Experience - programming and related",
+            "experience": {
+                "web": "HTML , CSS , JavaScript: Some little games and few web pages.",
+                "python": "Python - Django: Develop few and simple web pages the Django Framework. Just Python, a simple blockchain program in 2020.",
+                "dart": "Dart - Flutter: Multiple mobile apps (Quiz App, Cooking App, Chat App).",
+                "git": "Git - Github."
+            }
+        },
+        "education": {
+            "title": "Education",
+            "education": {
+                "diploma": "Diploma: Cyber-Security Offensive Pentesting Diploma with DragonJAR in 2019 (Manizales, Colombia)",
+                "school": "School: Colegio Inglés De los Andes (Santiago de Cali, Colombia)",
+                "university": "University: EAFIT (Medellín Colombia)"
+            }
+        },
+        "language": {
+            "title": "Languages",
+            "languages": {
+                "spanish": "Spanish: Native level",
+                "english": "English: B2 level",
+                "japanese": "Japanese: Studied for more than 5 years",
+                "korean": "korean: TOPIK I 2급"
+            }
+        },
+        "hobbie": {
+            "title": "hobbies",
+            "hobbies": {
+                "taekwondo": "Practice Taekwon-Do ITF",
+                "read": "Read all kind of books",
+                "meetups": "Participate in Meetups"
+            }
+        }
+    },
+    "form": {
+        "title": "Do not waste more time, Contact me right way!",
+        "span": {
+            "name": "name",
+            "email": "Email",
+            "subject": "Subject",
+            "message": "Message",
+            "send": "Send"
+        }
+    },
+    "footer": {
+        "support": "Support",
+        "terms": "Terms of use"
+    }
+}

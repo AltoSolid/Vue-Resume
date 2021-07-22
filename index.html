@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Awesome resume</title>
+    <meta name="description" content="Awesome resume of Santiago Hincapié Murillo who is currently an Front-End Developer intern at Playvox">
+    <meta name="keywords" content="resume, front-end, HTML5, CSS, Awesome, Santiago, Hincapié, Murillo">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="main.css">
+    <script src="https://unpkg.com/vue@2.6.14/dist/vue.js"></script>
+    <script src="app.js" defer></script>
+</head>
+
+<body>
+    <div id="app">
+        <main>
+            <section>
+                <div class="container">
+                    <div class="left-container">
+                        <article>
+                            <div class="left-container__image-container">
+                                <img v-bind:src="about_me.image" alt="Santiago Hincapie Murillo" class="left-container__image">
+                            </div>
+                            <section id="about-me">
+                                <h2 class="left-container__subtitle">{{resumeInfo.about_me.title}}</h2>
+                                <p class="about-me__description">{{resumeInfo.about_me.descriptionFirst}}</p>
+
+                                <p class="about-me__description">{{resumeInfo.about_me.descriptionSecond}}</p>
+                            </section>
+                            <section id="contact">
+                                <h2 class="left-container__subtitle">{{resumeInfo.contact.title}}</h2>
+                                <ul class="contact__links">
+                                    <li class="contact__link">{{resumeInfo.contact.email}}</li>
+                                    <li class="contact__link">
+                                        <a v-bind:href="contact.githubLink" target="__blank">{{resumeInfo.contact.github}}</a>
+                                    </li>
+                                    <li class="contact__link">{{resumeInfo.contact.number}}</li>
+                                </ul>
+                            </section>
+                            <section id="skills">
+                                <h2 class="left-container__subtitle">{{resumeInfo.skills.title}}</h2>
+                                <ul>
+                                    <li>{{resumeInfo.skills.skills.thinking}}</li>
+                                    <li>{{resumeInfo.skills.skills.positivism}}</li>
+                                    <li>{{resumeInfo.skills.skills.programming}}</li>
+                                </ul>
+                            </section>
+                        </article>
+                    </div>
+                    <div class="right-container">
+                        <article>
+                            <section>
+                                <h1>{{resumeInfo.rightContainer.name}}</h1>
+                                <div class="right-container__subtitle">
+                                </div>
+                                <h2 class="right-container__subtitle-description">{{resumeInfo.rightContainer.subtitle}}</h2>
+                                <div id="container">
+                                    <img src="img/logo.jpg" alt="playvox">
+                                    <div id="ball"></div>
+                                </div>
+                                <img v-bind:src="rightContainer.image" alt="playvox_logo" class="right-container__subtitle-logo">
+
+                            </section>
+                            <section class="right-container__section">
+                                <h2>{{resumeInfo.rightContainer.experience.title}}</h2>
+                                <ul class="right-container__list-circle">
+                                    <li>{{resumeInfo.rightContainer.experience.experience.web}}</li>
+                                    <li>{{resumeInfo.rightContainer.experience.experience.python}}</li>
+                                    <li>{{resumeInfo.rightContainer.experience.experience.dart}}</li>
+                                    <li>{{resumeInfo.rightContainer.experience.experience.git}}</li>
+                                </ul>
+                            </section>
+                            <section class="right-container__section">
+                                <h2>{{resumeInfo.rightContainer.education.title}}</h2>
+                                <ul class="right-container__list">
+                                    <li>{{resumeInfo.rightContainer.education.education.diploma}}</li>
+                                    <li>{{resumeInfo.rightContainer.education.education.school}}</li>
+                                    <li>{{resumeInfo.rightContainer.education.education.university}}</li>
+                                </ul>
+                            </section>
+                            <section class="right-container__section">
+                                <h2>{{resumeInfo.rightContainer.language.title}}</h2>
+                                <ul class="right-container__list-circle">
+                                    <li>{{resumeInfo.rightContainer.language.languages.spanish}}</li>
+                                    <li>{{resumeInfo.rightContainer.language.languages.english}}</li>
+                                    <li>{{resumeInfo.rightContainer.language.languages.japanese}}</li>
+                                    <li>{{resumeInfo.rightContainer.language.languages.korean}}</li>
+                                </ul>
+                            </section>
+                            <section class="right-container__section">
+                                <h2>{{resumeInfo.rightContainer.hobbie.title}}</h2>
+                                <ul class="right-container__list-circle">
+                                    <li>{{resumeInfo.rightContainer.hobbie.hobbies.taekwondo}}</li>
+                                    <li>{{resumeInfo.rightContainer.hobbie.hobbies.read}}</li>
+                                    <li>{{resumeInfo.rightContainer.hobbie.hobbies.meetups}}</li>
+                                </ul>
+                            </section>
+                        </article>
+                    </div>
+                </div>
+            </section>
+            <section>
+                <h2 class="email-title">{{resumeInfo.form.title}}</h2>
+                <form action="https://formspree.io/f/mjvjowvq" method="POST" class="form">
+                    <label class="custom-field">
+                    <input type="text" name="name" class="form__input" required>
+                    <span class="placeholder">{{resumeInfo.form.span.name}}</span>
+                </label>
+                    <label class="custom-field">
+                    <input type="text" name="email" class="form__input" required>
+                    <span class="placeholder">{{resumeInfo.form.span.email}}</span>
+                </label>
+                    <label class="custom-field">
+                    <input type="text" name="subject" class="form__input" required>
+                    <span class="placeholder">{{resumeInfo.form.span.subject}}</span>
+                </label>
+                    <label class="custom-field">
+                    <textarea name="message" rows="3" class="form__input" id="custom-field__input" required></textarea>
+                    <span class="placeholder">{{resumeInfo.form.span.message}}</span>
+                </label>
+                    <button type="submit" value="Send" class="form__btn">{{resumeInfo.form.span.send}}</button>
+                </form>
+            </section>
+        </main>
+        <footer class="main-footer">
+            <nav>
+                <ul class="main-footer__links">
+                    <li class="main-footer__link">
+                        <a href="#">{{resumeInfo.footer.support}}</a>
+                    </li>
+                    <li class="main-footer__link">
+                        <a href="#">{{resumeInfo.footer.terms}}</a>
+                    </li>
+                </ul>
+            </nav>
+        </footer>
+    </div>
+</body>
+
+</html>
